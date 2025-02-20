@@ -42,7 +42,7 @@ Unfortunately, you will run into two issues:
 
 (Optional, irritating, not obviously useful) Add the ability to handle special tokens. You'll then be able to match the output of tiktoken even when special tokens are present, e.g.:
 
-```
+```[README.md](README.md)
 import tiktoken
 enc = tiktoken.get_encoding("cl100k_base") # this is the GPT-4 tokenizer
 ids = enc.encode("<|endoftext|>hello world", allowed_special="all")
